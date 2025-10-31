@@ -11,7 +11,7 @@ MODEL_FILE = 'earthquake_magnitude_rfr.pkl'       # your trained model (optional
 COLUMNS_FILE = 'model_columns.pkl'                # optional saved feature column order
 FALLBACK_COLUMNS = ['Depth_km','Foreshock_Count','Aftershock_Count','Energy_Released_Joules']
 
-# Utility: load model (tries joblib then pickle), returns None if not found
+
 def load_model():
     if os.path.exists(MODEL_FILE):
         try:
